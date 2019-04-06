@@ -1,6 +1,6 @@
 var wins = 0;
 var losses = 0;
-var alphabet = ["a", "b", "c", "d", "e"];
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var computerGuess = null;
 var guessesRemaining = 9;
 //
@@ -23,7 +23,7 @@ document.onkeyup = function (event) {
         guessesRemaining--
         document.getElementById("guesses-left").innerHTML = guessesRemaining
     }
-    document.getElementById("guesses-so-far").prepend(event.key + ", ")
+    document.getElementById("guesses-so-far").append(event.key + ", ")
 }
 
 function resetGame() {
